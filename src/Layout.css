@@ -1,0 +1,52 @@
+
+@font-face {font-family: "Billabong"; src: url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot"); src: url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff") format("woff"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.svg#BillabongW00-Regular") format("svg"); }
+
+.layout {
+    margin-top: 100px;
+    height: 676px;
+    width: 375px;
+    background-color: rgba(242, 52, 95, 0.2)
+}
+
+.bookstagram {
+    height: 45px;
+    background-color: rgba(242, 52, 95, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Billabong;
+    padding-top: 10px;
+}
+
+.content {
+    height: 566px;
+} 
+
+.menu {
+    height: 56px;
+    background-color: rgba(242, 52, 95, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 28.66px;
+    width: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.fa {
+    font-size: 23px;
+}
+
+.title {
+    padding-top:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    padding-left: 4px;
+}
