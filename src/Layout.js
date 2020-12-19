@@ -4,6 +4,7 @@ import './Layout.css'
 import { faHome, faBookOpen, faUserFriends, faUser} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {Container, Row, Col} from 'react-bootstrap'
+import BookList from './BookList'
 
 class Layout extends React.Component {
 
@@ -21,7 +22,7 @@ class Layout extends React.Component {
                 </p>
             </div>
             <div className = "content" >
-
+                <BookList />
             </div> 
             <Container className = "menu">
                 <Col className="icon"> 
