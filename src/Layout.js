@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {Container, Row, Col} from 'react-bootstrap'
 import BookList from './BookList'
 import Quote from './Quote'
+import Comment from './Comment'
 
 class Layout extends React.Component {
 
@@ -23,7 +24,7 @@ class Layout extends React.Component {
                 </p>
             </div>
             <div className = "content" >
-                <Quote />
+                <Comment />
             </div> 
             <Container className = "menu">
                 <Col className="icon"> 
