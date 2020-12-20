@@ -46,7 +46,7 @@ class Library extends React.Component {
                                     <img src={book1} alt ="" width="85.88" height="136.23"/>
                                     </Row>
                                     <Row>
-                                        <Line percent="20" strokeWidth="6" trailWidth="5" strokeColor="#90ee90" trailColor="white" />
+                                        <Line percent="20" strokeWidth="6" trailWidth="5" strokeColor="#00bd51" trailColor="white" />
                                     </Row>
                                 </Container>
                             </Col>
@@ -56,7 +56,7 @@ class Library extends React.Component {
                                          <img src={book2} alt ="" width="85.88" height="136.23"/>
                                     </Row>
                                      <Row>
-                                        <Line percent="80" strokeWidth="6" trailWidth="5" strokeColor="#90ee90" trailColor="white" />
+                                        <Line percent="80" strokeWidth="6" trailWidth="5" strokeColor="#00bd51" trailColor="white" />
                                     </Row>
                                 </Container>
                             </Col>
@@ -66,7 +66,7 @@ class Library extends React.Component {
                                         <img src={book3} alt ="" width="85.88" height="136.23"/>
                                     </Row>
                                     <Row>
-                                            <Line percent="40" strokeWidth="6" trailWidth="5" strokeColor="#90ee90" trailColor="white" />
+                                            <Line percent="40" strokeWidth="6" trailWidth="5" strokeColor="#00bd51" trailColor="white" />
                                     </Row>
                                 </Container>
                             </Col>
