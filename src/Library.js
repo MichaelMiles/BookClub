@@ -1,0 +1,104 @@
+
+import React from 'react'
+import {Container, Row, Col, FormControl, InputGroup, Form, ProgressBar} from 'react-bootstrap'
+import './Library.css'
+import book1 from './books/14.jpg'
+import book2 from './books/9.jpg'
+import book3 from './books/13.jpg' 
+import book4 from './books/11.jpg' 
+import book5 from './books/7.jpg' 
+import book6 from './books/8.jpg'
+import book7 from './books/1.jpg' 
+import book8 from './books/5.jpeg' 
+import book9 from './books/4.jpg'  
+
+class Library extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+ 
+
+                <Container className='list'>
+                        <Row className='bar content'>
+                            <Col className='left'>
+                                <p>Library </p>
+                            </Col>
+                            <Col className='right'>
+                                 <p>+</p>
+                            </Col> 
+                        </Row>
+
+                        <Row className='searchBar'>
+                              <Form className='form'>
+                                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                              </Form>
+                        </Row>
+
+                        <Row className='content books'>
+                            <Col className='book'>
+                                <Container>
+                                    <Row>
+                                    <img src={book1} alt ="" width="85.88" height="136.23"/>
+                                    </Row>
+                                    <Row>
+                                         <ProgressBar variant="success" now={40} />
+                                    </Row>
+                                </Container>
+                            </Col>
+                            <Col className='book'>
+                                    <img src={book2} alt ="" width="85.88" height="136.23"/>
+                            </Col>
+                            <Col className='book'>
+                                 <img src={book3} alt ="" width="85.88" height="136.23"/>
+                            </Col>
+                    
+                        </Row>
+
+                        <Row className='bar Content'>
+                             <Col className='left'>
+                                <p>Completed </p>
+                              </Col>
+                                <Col className='right'>
+                                 <p></p>
+                            </Col> 
+                        </Row>
+                        <Row className='content'>
+                            <Row className='content shelf'>
+                                <Col className='book'>
+                                    <img src={book4} alt ="" width="85.88" height="136.23"/>   
+                                </Col>
+                                <Col className='book'>
+                                        <img src={book5} alt ="" width="85.88" height="136.23"/>
+                                </Col>
+                                <Col className='book'>
+                                    <img src={book6} alt ="" width="85.88" height="136.23"/>
+                                </Col>
+                            </Row>
+                            <Row className='content shelf'>
+                                <Col className='book'>
+                                    <img src={book7} alt ="" width="85.88" height="136.23"/>   
+                                </Col>
+                                <Col className='book'>
+                                        <img src={book8} alt ="" width="85.88" height="136.23"/>
+                                </Col>
+                                <Col className='book'>
+                                    <img src={book9} alt ="" width="85.88" height="136.23"/>
+                                </Col>
+                            </Row>
+                        </Row>
+
+                </Container>
+            
+
+
+ 
+        );
+    }
+}
+
+
+export default Library;

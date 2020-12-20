@@ -1,0 +1,80 @@
+
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    background-color: rgba(242, 52, 95, 0.2)
+}
+
+.list {
+    overflow: scroll;
+    height: 566px;
+    width: 375px;
+}
+
+
+
+
+ .left{
+    width: 185px;
+    padding-left:10px;
+    font-family: roboto;
+ 
+ }
+
+ .right{
+    width: 185px;
+    font-family: roboto;
+    padding-right: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+ }
+
+ .searchBar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(242, 52, 95, 0.4);
+
+
+ }
+
+ .mr-sm-2 {
+    background-color: rgba(242, 52, 95, 0.6);
+    width: 300px;
+    height: 20px;
+    border-style: none;
+    border-radius: 20px;
+    text-align: center;
+ }
+     
+
+     
+ .content {
+    background-color: rgba(242, 52, 95, 0.0);
+ }
+
+ .books {
+     display: flex;
+     justify-content: space-around;
+     height: 200px;
+     padding-left: 12px;
+     padding-top: 12px;
+ }
+
+ .shelf {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    padding-left: 12px;
+    padding-top: 10px;
+
+ }
+
+ .book {
+ 
+ }

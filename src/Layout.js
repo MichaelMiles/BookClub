@@ -7,6 +7,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 import BookList from './BookList'
 import Quote from './Quote'
 import Comment from './Comment'
+import Library from './Library'
 
 class Layout extends React.Component {
 
@@ -24,7 +25,7 @@ class Layout extends React.Component {
                 </p>
             </div>
             <div className = "content" >
-                <Comment />
+                <Library />
             </div> 
             <Container className = "menu">
                 <Col className="icon"> 
