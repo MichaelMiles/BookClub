@@ -1,6 +1,7 @@
 
 import React from 'react'
 import {Container, Row, Col, FormControl, InputGroup, Form, ProgressBar} from 'react-bootstrap'
+import { Line } from 'rc-progress';
 import './Library.css'
 import book1 from './books/14.jpg'
 import book2 from './books/9.jpg'
@@ -45,15 +46,29 @@ class Library extends React.Component {
                                     <img src={book1} alt ="" width="85.88" height="136.23"/>
                                     </Row>
                                     <Row>
-                                         <ProgressBar variant="success" now={40} />
+                                        <Line percent="20" strokeWidth="6" trailWidth="5" strokeColor="#90ee90" trailColor="white" />
                                     </Row>
                                 </Container>
                             </Col>
                             <Col className='book'>
-                                    <img src={book2} alt ="" width="85.88" height="136.23"/>
+                                <Container>
+                                    <Row>
+                                         <img src={book2} alt ="" width="85.88" height="136.23"/>
+                                    </Row>
+                                     <Row>
+                                        <Line percent="80" strokeWidth="6" trailWidth="5" strokeColor="#90ee90" trailColor="white" />
+                                    </Row>
+                                </Container>
                             </Col>
                             <Col className='book'>
-                                 <img src={book3} alt ="" width="85.88" height="136.23"/>
+                                <Container>
+                                    <Row>
+                                        <img src={book3} alt ="" width="85.88" height="136.23"/>
+                                    </Row>
+                                    <Row>
+                                            <Line percent="40" strokeWidth="6" trailWidth="5" strokeColor="#90ee90" trailColor="white" />
+                                    </Row>
+                                </Container>
                             </Col>
                     
                         </Row>
