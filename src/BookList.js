@@ -2,7 +2,12 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import './BookList.css'
-import firstBook from './books/1.jpg'
+import book1 from './books/14.jpg'
+import book2 from './books/9.jpg'
+import book3 from './books/13.jpg'
+import book4 from './books/11.jpg'
+import book5 from './books/9.jpg'
+import book6 from './books/12.jpg'
 
 class BookList extends React.Component {
 
@@ -18,7 +23,7 @@ class BookList extends React.Component {
 
                     <Row className='book'>
                         <Col className='c1'>
-                            <img src={firstBook} alt ="" width="58" height="92"/>
+                            <img src={book1} alt ="" width="58" height="92"/>
                         </Col>
                         <Col className='c2'>
                             <Row className='r1'>
@@ -36,7 +41,7 @@ class BookList extends React.Component {
 
                      <Row className='book'>
                         <Col className='c1'>
-                            <img src={firstBook} alt ="" width="58" height="92"/>
+                            <img src={book2} alt ="" width="58" height="92"/>
                         </Col>
                         <Col className='c2'>
                             <Row className='r1'>
@@ -52,7 +57,7 @@ class BookList extends React.Component {
                     </Row>
                     <Row className='book'>
                         <Col className='c1'>
-                            <img src={firstBook} alt ="" width="58" height="92"/>
+                            <img src={book3} alt ="" width="58" height="92"/>
                         </Col>
                         <Col className='c2'>
                             <Row className='r1'>
@@ -69,7 +74,7 @@ class BookList extends React.Component {
 
                     <Row className='book'>
                         <Col className='c1'>
-                            <img src={firstBook} alt ="" width="58" height="92"/>
+                            <img src={book4} alt ="" width="58" height="92"/>
                         </Col>
                         <Col className='c2'>
                             <Row className='r1'>
@@ -86,7 +91,7 @@ class BookList extends React.Component {
 
                      <Row className='book'>
                         <Col className='c1'>
-                            <img src={firstBook} alt ="" width="58" height="92"/>
+                            <img src={book5} alt ="" width="58" height="92"/>
                         </Col>
                         <Col className='c2'>
                             <Row className='r1'>
@@ -104,7 +109,7 @@ class BookList extends React.Component {
 
                      <Row className='book'>
                         <Col className='c1'>
-                            <img src={firstBook} alt ="" width="58" height="92"/>
+                            <img src={book6} alt ="" width="58" height="92"/>
                         </Col>
                         <Col className='c2'>
                             <Row className='r1'>
