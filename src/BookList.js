@@ -116,7 +116,7 @@ class BookList extends React.Component {
                                 P.1
                             </Row>
                             <Row className='r2'>
-                                A book review is a form of literary criticism in which a book isrsasdasdsdasdaddsadeview or scholarly reviewasdsss
+                                A book review is a form of literary criticism in which a book is scholarly ...
                             </Row>
                             <Row className='r3'>
                                 3 hours ago

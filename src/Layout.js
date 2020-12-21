@@ -11,6 +11,13 @@ import Library from './Library'
 import Reminders from './Reminders'
 import SearchResult from './SearchResult'
 import Group from './Group'
+import Track from './Track'
+import book1 from './books/14.jpg'
+import book2 from './books/9.jpg'
+import book3 from './books/13.jpg'
+import book4 from './books/11.jpg'
+import book5 from './books/9.jpg'
+import book6 from './books/12.jpg'
 
 class Layout extends React.Component {
 
@@ -28,7 +35,7 @@ class Layout extends React.Component {
                 </p>
             </div>
             <div className = "content" >
-                <Group />
+                <Track />
             </div> 
             <Container className = "menu">
                 <Col className="icon"> 

@@ -4,6 +4,12 @@ import {Container, Row, Col, FormControl, InputGroup, Form, ProgressBar} from 'r
 import './Group.css'
 import { faBook} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import book1 from './books/14.jpg'
+import book2 from './books/9.jpg'
+import book3 from './books/13.jpg'
+import book4 from './books/11.jpg'
+import book5 from './books/9.jpg'
+import book6 from './books/12.jpg'
 
 class Group extends React.Component {
 
