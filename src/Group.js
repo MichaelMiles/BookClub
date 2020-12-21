@@ -15,23 +15,65 @@ class Group extends React.Component {
         return (
  
 
-                <Container className='list'>
+                <Container className='glist'>
 
-                        <Row className='content books'>
+                        <Row className='content gBooks'>
             
-                                <Col className='intro'>
-                                   <FontAwesomeIcon className="icon" icon={faBook}  className="fa" size="10x"  />
+                                <Col className='gIntro'>
+                                   <FontAwesomeIcon className="icon" icon={faBook}  className="faa" size="3x"  />
                                 </Col>
-                                <Col className='intro'>
-                                    <p className='title'>
-                                    Harry Potter and the Deathly Hallows
+                                <Col className='gIntro g2'>
+                                    <p className='gTitle'>
+                                    Quote Sharing w/ Alice
                                     </p>
                                 </Col>
                     
              
                         </Row>
 
-         
+
+                        <Row className='content gBooks'>
+            
+                                <Col className='gIntro'>
+                                   <FontAwesomeIcon className="icon" icon={faBook}  className="faa" size="3x"  />
+                                </Col>
+                                <Col className='gIntro g2'>
+                                    <p className='gTitle'>
+                                    Contemporary Civilizations (Tue/Thu 10am)
+                                    </p>
+                                </Col>
+                    
+             
+                        </Row>
+
+
+                        <Row className='content gBooks'>
+            
+                                <Col className='gIntro'>
+                                   <FontAwesomeIcon className="icon" icon={faBook}  className="faa" size="3x"  />
+                                </Col>
+                                <Col className='gIntro g2'>
+                                    <p className='gTitle'>
+                                    Family Book Club (Sun 9pm)
+                                    </p>
+                                </Col>
+                    
+             
+                        </Row>
+
+                        <Row className='content gBooks'>
+            
+                                <Col className='gIntro'>
+                                   <FontAwesomeIcon className="icon" icon={faBook}  className="faa" size="3x"  />
+                                </Col>
+                                <Col className='gIntro g2'>
+                                    <p className='gTitle'>
+                                    Bible Study Group (Sun 2pm)
+                                    </p>
+                                </Col>
+                    
+             
+                        </Row>
 
                        
                 </Container>

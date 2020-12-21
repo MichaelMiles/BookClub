@@ -7,13 +7,16 @@
     background-color: rgba(242, 52, 95, 0.2)
 }
 
-.list {
+.gList {
     overflow: scroll;
     height: 566px;
     width: 375px;
 }
 
 
+.faa {
+    color: grey;
+}
 
 
  .left{
@@ -58,11 +61,11 @@
     background-color: rgba(242, 52, 95, 0.0);
  }
 
- .books {
+ .gBooks {
      
      display: flex;
-     justify-content: space-around;
-     height: 180px;
+     justify-content: flex-start;
+     height: 100px;
      width: 300px;
      margin-left: 30px;
      border-bottom: 0.5px solid grey;
@@ -77,14 +80,14 @@
 
  }
 
- .intro {
-     width:85.88px;
+ .gIntro {
+     width:100px;
      display: flex;
      justify-content: center;
      align-items: center;
  }
 
- .title {
+ .gTitle {
      font-size: 14px;
  }
 
@@ -92,3 +95,7 @@
      font-size: 10px;
  }
 
+
+ .g2 {
+     width: 150px;
+ }

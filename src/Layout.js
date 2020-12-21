@@ -10,6 +10,7 @@ import Comment from './Comment'
 import Library from './Library'
 import Reminders from './Reminders'
 import SearchResult from './SearchResult'
+import Group from './Group'
 
 class Layout extends React.Component {
 
@@ -27,7 +28,7 @@ class Layout extends React.Component {
                 </p>
             </div>
             <div className = "content" >
-                <SearchResult />
+                <Group />
             </div> 
             <Container className = "menu">
                 <Col className="icon"> 
