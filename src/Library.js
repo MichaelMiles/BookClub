@@ -3,6 +3,7 @@ import React from 'react'
 import {Container, Row, Col, FormControl, InputGroup, Form, ProgressBar} from 'react-bootstrap'
 import { Line } from 'rc-progress';
 import './Library.css'
+import SearchResult from './SearchResult'
 import book1 from './books/14.jpg'
 import book2 from './books/9.jpg'
 import book3 from './books/13.jpg' 
@@ -17,9 +18,14 @@ class Library extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.state = {
+            page: 1
+        }
     }
 
     render() {
+        if(this.state.page == 1) {
         return (
  
 
@@ -33,7 +39,7 @@ class Library extends React.Component {
                             </Col> 
                         </Row>
 
-                        <Row className='searchBar'>
+                        <Row className='searchBar' onClick = {() => {this.setState({page: 2})}}>
                               <Form className='form'>
                                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                               </Form>
@@ -112,6 +118,9 @@ class Library extends React.Component {
 
  
         );
+        } else  {
+            return (<SearchResult />);
+        }
     }
 }
 

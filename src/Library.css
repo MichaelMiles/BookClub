@@ -39,6 +39,7 @@
     align-items: center;
     height: 40px;
     background-color: rgba(242, 52, 95, 0.4);
+    cursor: pointer;
 
 
  }

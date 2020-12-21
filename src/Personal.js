@@ -4,14 +4,19 @@ import {Container, Row, Col} from 'react-bootstrap'
 import './Personal.css'
 import { faHome, faBookOpen, faUserShield, faUser, faChartBar, faLanguage} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Reminders from './Reminders'
 
 class Personal extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            page: 1
+        }
     }
 
     render() {
+        if( this.state.page == 1) {
         return (
                 <Container className='pList'>
 
@@ -79,7 +84,7 @@ class Personal extends React.Component {
                             >
                         </Col>
                     </Row>
-                                         <Row className="Report reminderr">
+                        <Row className="Report reminderr" onClick={() => {this.setState({page: 2})}}>
                         <Col>
                             Reminders
                         </Col>
@@ -128,6 +133,9 @@ class Personal extends React.Component {
  
  
         );
+        } else {
+           return( <Reminders />);
+        }
     }
 }
 

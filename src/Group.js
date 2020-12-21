@@ -10,14 +10,19 @@ import book3 from './books/13.jpg'
 import book4 from './books/11.jpg'
 import book5 from './books/9.jpg'
 import book6 from './books/12.jpg'
+import Track from './Track'
 
 class Group extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            page: 1
+        }
     }
 
     render() {
+        if (this.state.page == 1) {
         return (
  
 
@@ -53,7 +58,7 @@ class Group extends React.Component {
                         </Row>
 
 
-                        <Row className='content gBooks'>
+                        <Row className='content gBooks gSpecial' onClick = {() => {this.setState({page: 2})}}>
             
                                 <Col className='gIntro'>
                                    <FontAwesomeIcon className="icon" icon={faBook}  className="faa" size="3x"  />
@@ -88,6 +93,10 @@ class Group extends React.Component {
 
  
         );
+
+        }else {
+            return (<Track />);
+        }
     }
 }
 
