@@ -14,7 +14,7 @@ class Quote extends React.Component {
         return (
             <div>
 
-                <Container className='list'>
+                <Container className='qList'>
                         <Row className='bar'>
                                 <b>The Selfish Gene </b>
                     

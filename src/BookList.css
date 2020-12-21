@@ -7,7 +7,7 @@
     background-color: rgba(242, 52, 95, 0.2)
 }
 
-.list {
+.bookList {
     overflow: scroll;
     height: 530px;
     width: 375px;

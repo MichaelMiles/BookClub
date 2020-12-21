@@ -19,7 +19,7 @@ class BookList extends React.Component {
         return (
             <div>
 
-                <Container className='list'>
+                <Container className='bookList'>
 
                     <Row className='book'>
                         <Col className='c1'>

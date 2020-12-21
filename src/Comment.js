@@ -14,7 +14,7 @@ class Comment extends React.Component {
         return (
             <div>
 
-                <Container className='list'>
+                <Container className='cList'>
                         <Row className='bar'>
                                 <b>The Selfish Gene </b>
                     
