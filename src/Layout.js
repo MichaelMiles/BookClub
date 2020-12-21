@@ -9,6 +9,7 @@ import Quote from './Quote'
 import Comment from './Comment'
 import Library from './Library'
 import Reminders from './Reminders'
+import SearchResult from './SearchResult'
 
 class Layout extends React.Component {
 
@@ -26,7 +27,7 @@ class Layout extends React.Component {
                 </p>
             </div>
             <div className = "content" >
-                <Reminders />
+                <SearchResult />
             </div> 
             <Container className = "menu">
                 <Col className="icon"> 

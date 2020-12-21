@@ -48,7 +48,7 @@ class BookList extends React.Component {
                                 P.348
                             </Row>
                             <Row className='r2'>
-                                Happiness does not really depend on objective conditions of either wealth, health or even community. Rather, it depends on the...
+                                Happiness does not really depend on objective conditions of either wealth, health or even community. Rather, it...
                             </Row>
                             <Row className='r3'>
                                 12 hours ago
