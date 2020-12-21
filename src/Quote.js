@@ -2,15 +2,19 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import './Quote.css'
-
+import Comment from './Comment'
 
 class Quote extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            page: 1
+        }
     }
 
     render() {
+        if (this.state.page == 1) {
         return (
             <div>
 
@@ -57,12 +61,15 @@ class Quote extends React.Component {
 
                 </Container>
 
-                <Row className='bar'>
+                <Row className='bar qSpecial' onClick={() => this.setState({page: 2})}>
                     <b>Add Comment </b>
                  </Row>
             </div>
  
         );
+        }else {
+            return (<Comment />)
+        }
     }
 }
 

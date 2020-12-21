@@ -38,13 +38,13 @@ class Layout extends React.Component {
                 </p>
             </div>
             <div className = "content" >
-                {this.state.page == 1 && <BookList /> }
+                {this.state.page == 1 && <BookList page={1} /> }
                 {this.state.page == 2 && <Library /> }
                 {this.state.page == 3 && <Group /> }
                 {this.state.page == 4 && <Personal /> }
             </div> 
             <Container className = "menu">
-                <Col className="icon" onClick={() => this.setPage(1)}> 
+                <Col className="icon" onClick={() => {this.setPage(1)}}> 
                     <Row>
                      <FontAwesomeIcon icon={faHome} className="fa"  />
                      </Row>

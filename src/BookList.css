@@ -21,6 +21,9 @@
     display: flex;
 }
 
+.special:hover {
+    cursor:pointer
+}
 
 .cc {
     

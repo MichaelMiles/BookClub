@@ -8,20 +8,32 @@ import book3 from './books/13.jpg'
 import book4 from './books/11.jpg'
 import book5 from './books/9.jpg'
 import book6 from './books/12.jpg'
+import Quote from './Quote'
+import Comment from './Comment'
 
 class BookList extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            page: this.props.page
+        }
+    }
+
+    setPage = (p) => {
+        this.setState({
+            page: p
+        })
     }
 
     render() {
-        return (
+        if (this.state.page == 1) {
+            return (
             <div>
 
                 <Container className='bookList'>
 
-                    <Row className='book'>
+                    <Row className='book special' onClick={() => this.setPage(2)}>
                         <Col className='c1'>
                             <img src={book1} alt ="" width="58" height="92"/>
                         </Col>
@@ -128,13 +140,19 @@ class BookList extends React.Component {
                 </Container>
 
 
-                <Row className='add'>
+                <Row className='add special' onClick={() => this.setPage(3)}>
                     <b>Add New </b>
                     
                 </Row>
-            </div>
+            </div>);
+        } else if (this.state.page == 2) {
+            return (<Quote />);
+        }  else if (this.state.page == 3) {
+            return (<Comment />);
+        }
+
  
-        );
+    
     }
 }
 
