@@ -1,0 +1,66 @@
+.pList {
+    overflow: scroll;
+    height: 566px;
+    width: 375px;
+    color: grey;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.avatar {
+    margin-top: 20px;
+    color: grey;
+}
+
+.statContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:50px;
+}
+
+.perContainer {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+    
+}
+
+.perText {
+    margin-top: 15px;
+    height: 20px;
+}
+
+
+.pTex {
+    margin-left: 20px;
+}
+
+.Report {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    width: 260px;
+    margin-left: 88px;
+}
+
+.arrow {
+    margin-left: 110px;
+}
+
+.reminderr {
+    border-bottom: none;
+}
+
+
+.Stat {
+    height: 40px;
+}
+
+.perStat {
+    margin-bottom: 15px;
+}
