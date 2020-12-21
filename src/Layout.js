@@ -8,6 +8,7 @@ import BookList from './BookList'
 import Quote from './Quote'
 import Comment from './Comment'
 import Library from './Library'
+import Reminders from './Reminders'
 
 class Layout extends React.Component {
 
@@ -25,7 +26,7 @@ class Layout extends React.Component {
                 </p>
             </div>
             <div className = "content" >
-                <Library />
+                <Reminders />
             </div> 
             <Container className = "menu">
                 <Col className="icon"> 
