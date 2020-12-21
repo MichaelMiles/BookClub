@@ -1,3 +1,11 @@
+
+# final HTML shell for COMS 4170
+
+Instruction: npm install to install all deps. npm start to run. 
+the links works as shown in figma prototype
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
