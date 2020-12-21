@@ -18,7 +18,15 @@ class Layout extends React.Component {
 
   constructor(props) {
     super(props);
-    // this.state = 
+    this.state = {
+        page: 1
+    }
+  }
+
+  setPage = (p) => {
+      this.setState({
+          page: p
+      })
   }
 
   render() {
@@ -30,36 +38,39 @@ class Layout extends React.Component {
                 </p>
             </div>
             <div className = "content" >
-                <Personal />
+                {this.state.page == 1 && <BookList /> }
+                {this.state.page == 2 && <Library /> }
+                {this.state.page == 3 && <Group /> }
+                {this.state.page == 4 && <Personal /> }
             </div> 
             <Container className = "menu">
-                <Col className="icon"> 
+                <Col className="icon" onClick={() => this.setPage(1)}> 
                     <Row>
-                     <FontAwesomeIcon icon={faHome} className="fa" />
+                     <FontAwesomeIcon icon={faHome} className="fa"  />
                      </Row>
                      <Row className="title">
                         Home
                      </Row>
                 </Col>    
-                <Col className="icon"> 
+                <Col className="icon" onClick={() => this.setPage(2)}> 
                     <Row>
-                         <FontAwesomeIcon icon={faBookOpen}  className="fa"  />
+                         <FontAwesomeIcon icon={faBookOpen}  className="fa" />
                        </Row>
                      <Row className="title">
                         Library
                      </Row>
                 </Col>
-                <Col className="icon"> 
+                <Col className="icon" onClick={() => this.setPage(3)} > 
                    <Row>
-                    <FontAwesomeIcon icon={faUserFriends}  className="fa"  />
+                    <FontAwesomeIcon icon={faUserFriends}  className="fa" />
                        </Row>
                     <Row className="title">
                        Groups
                      </Row>
                 </Col>
-                <Col className="icon"> 
+                <Col className="icon" onClick={() => this.setPage(4)}> 
                    <Row>
-                    <FontAwesomeIcon icon={faUser}  className="fa"  />
+                    <FontAwesomeIcon icon={faUser}  className="fa" />
                        </Row>
                      <Row className="title">
                         Profile
